@@ -68,13 +68,13 @@ all: siridb-server
 siridb-server: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "siridb-server" $(OBJS) $(USER_OBJS) $(LDFLAGS) $(LIBS) $(CRYPT) $(UUID)
+	$(CC)  -o "siridb-server" $(OBJS) $(USER_OBJS) $(LDFLAGS) $(LIBS) $(CRYPT) $(UUID)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) siridb-server
+	-$(RM) $(EXECUTABLES) $(OBJS) $(C_DEPS) siridb-server
 	-@echo ' '
 
 .PHONY: all clean dependents
