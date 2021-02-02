@@ -74,7 +74,7 @@ siridb-server: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) siridb-server
+	-$(RM) $(EXECUTABLES) $(OBJS) $(C_DEPS) siridb-server
 	-@echo ' '
 
 .PHONY: all clean dependents

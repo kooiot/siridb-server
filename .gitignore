@@ -84,3 +84,9 @@ debian/siridb-server.substvars
 debian/siridb-server/
 Release/siridb-server.1
 
+# VIM
+*~
+*.un~
+*.swp
+*.bin
+tags
